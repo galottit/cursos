@@ -26,5 +26,9 @@ if (valoresNumeros == 0){
         }
     }
     let numeroAMostrar : number = cantidadMayores / cantidadValores * 100;
+    if (cantidadMayores == 1){
+        console.log(cantidadMayores + " positivo, " + numeroAMostrar + "% del total");
+    }else {
     console.log(cantidadMayores + " positivos, " + numeroAMostrar + "% del total");
+    }
 }
