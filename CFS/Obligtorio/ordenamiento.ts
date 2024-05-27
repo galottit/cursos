@@ -40,7 +40,7 @@ function crearArreglo(cantidad: number) : number[]{
     return nuevoArreglo;
 }
 
-let cantidad : number = 8; //Largo del arreglo
+let cantidad : number = 15; //Largo del arreglo
 let valorMax : number = 30 //Máximo valor de los números del arreglo
 let arreglo : number[] = crearArreglo(cantidad);
 console.log(arreglo);
