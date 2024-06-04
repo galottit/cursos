@@ -3,7 +3,7 @@
 // en otro arreglo de 3 elementos en el orden que usted desee.
 // Pegar el codigo aquí.
 
-/*
+
 let textoAEvaluar : string = "ESTEESELSTRINGQUEVOYAUSARENLAEVALUACION";
 let resultados : number[] = new Array;
 
@@ -14,13 +14,13 @@ let cantO : number = 0;
 for (let i : number = 0 ; i <= textoAEvaluar.length; i++){
     switch(textoAEvaluar[i]){
         case "A":
-            cantA = cantA +1;
+            cantA++;
             break;
         case "E":
-            cantE = cantE +1;
+            cantE++;
             break;
         case "O":
-            cantO = cantO +1;
+            cantO++;
             break
         default:
             break;
@@ -28,7 +28,7 @@ for (let i : number = 0 ; i <= textoAEvaluar.length; i++){
 }
 resultados = [cantA, cantE, cantO];
 console.log(resultados);
-*/
+
 
 // corregir los errores que encuentre
 /*
@@ -76,7 +76,7 @@ function obtenerPromedio(arr:number[]): number {
 console.log(obtenerPromedio([1,2,3,4,5,6]));
 
 */
-
+/*
 let pruebaTexto1 : string = "asdasdasdaw";
 let pruebaTexto2 : string = "LSIJLNADPWAJ";
 
@@ -84,3 +84,4 @@ console.log(pruebaTexto1.toLocaleLowerCase());
 console.log(pruebaTexto1.toUpperCase());
 console.log(pruebaTexto2.toLocaleLowerCase());
 console.log(pruebaTexto2.toUpperCase());
+*/
