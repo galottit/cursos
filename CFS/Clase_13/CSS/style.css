@@ -5,13 +5,22 @@ p {
     color:blue;
     font-size: 20px;
     background-color: aliceblue;
+    text-align: justif
+    
 }
-
+/*
+Aliniear texto
+● Centrado (text-align: center)
+● Derecha (text-align: right)
+● Izquierda (text-align: left)
+● Justificado (text-align: justify)
+*/
 /*Selector de clase 
 las clases se llaman con .nombre*/
 
 .colorVerde {
     color: green;
+    text-align: center;
 }
 
 /* Selectores de tipo ID
