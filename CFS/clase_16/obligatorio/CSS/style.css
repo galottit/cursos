@@ -27,3 +27,11 @@ body {
     height: 250px;
     margin: 5px;
 }
+
+.mouseArriba:hover {
+    color: rgb(153, 54, 54);
+    background-color: rgb(180, 67, 67);
+}
+.linkVisitado:visited {
+    color: green;
+}
