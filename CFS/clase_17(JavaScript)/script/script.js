@@ -1,8 +1,7 @@
 "use strict";
 
 function cambiarTexto() {
-    let entrada = document.getElementById("imput1");
-    let titulo = entrada.value; 
+    let titulo = document.getElementById("imput1").value;
     document.getElementById("titulo").innerText = titulo;
 }
 
