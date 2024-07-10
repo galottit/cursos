@@ -1,3 +1,25 @@
-.titulo {
-    color: red;
+
+body {
+    display: flex;
+    justify-content: space-between;
+    border: solid 3px green;
 }
+
+.divDerecha, .divIzquierda {
+    display: flex;
+    border: 2px solid black;
+    width:200px;
+    height: 100px;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(250, 128, 113);
+}
+
+.divIzquierda {
+    visibility: visible;
+}
+
+.divDerecha {
+    visibility: hidden;
+}
+

@@ -1,9 +1,23 @@
 "use strict";
 
-function cambiarTexto() {
-    let titulo = document.getElementById("imput1").value;
-    document.getElementById("titulo").innerText = titulo;
+let boton1 =  document.getElementById("boton1");
+boton1.addEventListener("click", mostrarOcultar1);
+let boton2 =  document.getElementById("boton2");
+boton2.addEventListener("click", mostrarOcultar2);
+
+
+function mostrarOcultar1() {
+    var divIzquierda = document.getElementById("divIzquierda");
+    divIzquierda.style.visibility = "hidden";
+    var divDerecha = document.getElementById("divDerecha");
+     divDerecha.style.visibility = "visible";
+
 }
 
-//document.querySelector("#titulo"); //si se trata de un ID se usa un #
-//document.getElementById("titulo"); // encuentra el 1er ID en el html;
+function mostrarOcultar2() {
+    var divIzquierda = document.getElementById("divIzquierda");
+    divIzquierda.style.visibility = "visible";
+    var divDerecha = document.getElementById("divDerecha");
+    divDerecha.style.visibility = "hidden";
+
+}
