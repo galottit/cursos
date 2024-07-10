@@ -7,17 +7,13 @@ boton2.addEventListener("click", mostrarOcultar2);
 
 
 function mostrarOcultar1() {
-    var divIzquierda = document.getElementById("divIzquierda");
     divIzquierda.style.visibility = "hidden";
-    var divDerecha = document.getElementById("divDerecha");
-     divDerecha.style.visibility = "visible";
+    divDerecha.style.visibility = "visible";
 
 }
 
 function mostrarOcultar2() {
-    var divIzquierda = document.getElementById("divIzquierda");
     divIzquierda.style.visibility = "visible";
-    var divDerecha = document.getElementById("divDerecha");
     divDerecha.style.visibility = "hidden";
 
 }
