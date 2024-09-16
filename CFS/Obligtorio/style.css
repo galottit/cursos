@@ -1,0 +1,14 @@
+.seccionTarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+.card-img-top {
+    height: 10rem;
+}
