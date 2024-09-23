@@ -1,11 +1,11 @@
-import { Vehiculos, listadoPersonas, listadoVehiculos } from "./vehiculos";
-import {Personas} from "./personas"
+import { Vehiculo, listadoPersonas, listadoVehiculos } from "./vehiculos";
+import {Persona} from "./personas"
 
 export class RegistroAutomotor {
-    private vehiculos:Vehiculos[];
-    private personas:Personas[];
+    private vehiculos:Vehiculo[];
+    private personas:Persona[];
 
-    constructor(vehiculos:Vehiculos[], personas:Personas[]){
+    constructor(vehiculos:Vehiculo[], personas:Persona[]){
         this.personas = personas;
         this.vehiculos = vehiculos;
     }

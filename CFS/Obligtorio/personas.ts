@@ -1,4 +1,4 @@
- export class Personas{
+ export class Persona{
     private nombre:string;
     private apellido:string;
     private dni:number;
