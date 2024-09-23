@@ -34,14 +34,12 @@ do {
             nuevoVehiculo();
             break;
         case 2:
-            // Lógica para la opción 2
             bajaVehiculo();
             break;
         case 3:
             transferenciaVehiculo();
             break;
         case 4:
-            //opcion 4
             console.log("Saliendo.....")
         default:
             console.log('Opción inválida.');
