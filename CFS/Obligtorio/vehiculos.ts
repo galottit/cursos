@@ -38,8 +38,8 @@ export class Vehiculo {
 
 //creo personas ficticias
 let persona1:Persona = new Persona("nombre1", "apellido1", 200);
-let persona2:Persona = new Persona("nombre2", "apellido2", 30000002);
-let persona3:Persona = new Persona("nombre3", "apellido3", 30000003);
+let persona2:Persona = new Persona("nombre2", "apellido2", 201);
+let persona3:Persona = new Persona("nombre3", "apellido3", 202);
 
 export let tipos:string[]=["auto", "camion", "moto"];
 let vehiculo1:Vehiculo = new Vehiculo(tipos[0], "fiat", "mobi", 2017, persona1);
