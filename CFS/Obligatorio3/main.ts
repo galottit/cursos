@@ -37,7 +37,7 @@ import { Luchador } from "./luchador";
 import { Arquero } from "./arquero";
 import { Personaje } from "./personaje";
 
-let cantidadPeleas:number = 3;
+let cantidadPeleas:number = 1;
 puntos();
 console.log("Comenzando juego");
 puntos();
@@ -96,20 +96,22 @@ function peleaMago(personaje:Mago):void{
             let ptsAtaque:number = Math.floor(Math.random() * (personaje.getNivel())) +1;
             personaje.atacar(ptsAtaque *10);
             vidaDelRival = vidaDelRival - ptsAtaque *10;
+            console.log("la vida del rival es de "+vidaDelRival);
             if (vidaDelRival <= 0){
+                puntos();
                 console.log("Derrotaste al rival nivel "+cantidadPeleas+". Subes de nivel");
                 console.log("Vamos a seguir luchando a ver que tan lejos puedes llegar");
-                cantidadPeleas =+1;
+                cantidadPeleas = cantidadPeleas +1;
                 personaje.setSubirNivel();
                 vidaDelRival = cantidadPeleas *10;
+                puntos();
                 break;
             }
-            console.log("la vida del rival es de "+vidaDelRival);
+            
             if(personaje.getVida()<=0){
                 break;
             }
         }
-        cantidadPeleas =+1 ;
     }
     console.log("Felicitaciones, llegaste al nivel "+ personaje.getNivel());
 }

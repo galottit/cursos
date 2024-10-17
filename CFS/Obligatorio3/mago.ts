@@ -17,8 +17,9 @@ export class Mago extends Personaje{
 
     public defender(multiplicador:number): void {
         console.log("Te están atacando")
-        console.log("Te quitaron "+multiplicador*10+" puntos de vida");
         this.setRestarVida(multiplicador);
+        console.log("Te quitaron "+multiplicador*10+" puntos de vida, te quedan: "+ this.getVida());
+        
     }
     agregarHabilidad():void{
         let nuevaHabilidad = this.obtenerHabilidad(habilidadesMagos);
