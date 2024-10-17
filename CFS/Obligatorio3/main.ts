@@ -37,7 +37,9 @@ import { Luchador } from "./luchador";
 import { Arquero } from "./arquero";
 import { Personaje } from "./personaje";
 
-let cantidadPeleas:number = 1;
+let cantidadPeleas:number = 1; // cada pelea es el nivel del enemigo
+let cuandoObtener
+//----------------comienzo el juego y creo un personaje
 puntos();
 console.log("Comenzando juego");
 puntos();
@@ -69,7 +71,7 @@ do {
             break;
     }
 } while (opcion > 3 || opcion < 1);
-
+//------------------------------ Me fijo que tipo de personaje es
 if (personaje instanceof Arquero){
     peleaArquero(personaje);
 } else if (personaje instanceof Luchador){
@@ -78,7 +80,7 @@ if (personaje instanceof Arquero){
     peleaMago(personaje);
 }
 
-
+//----------------------- funciones de pelea
 function peleaArquero(personaje:Arquero):void{
     let vidaDelRival:number = cantidadPeleas * 10;
     while(vidaDelRival >0){
@@ -91,7 +93,7 @@ function peleaArquero(personaje:Arquero):void{
 function peleaMago(personaje:Mago):void{
     while (personaje.getVida() >= 0){
         let vidaDelRival:number = cantidadPeleas * 10;
-        while(vidaDelRival >= 0){
+        while(vidaDelRival >= 0){   // mientras la vida del rival sea mayor a 0, sigo peleando contra el mismo
             personaje.defender(Math.floor(Math.random() * (cantidadPeleas)) +1);
             let ptsAtaque:number = Math.floor(Math.random() * (personaje.getNivel())) +1;
             personaje.atacar(ptsAtaque *10);
@@ -103,12 +105,13 @@ function peleaMago(personaje:Mago):void{
                 console.log("Vamos a seguir luchando a ver que tan lejos puedes llegar");
                 cantidadPeleas = cantidadPeleas +1;
                 personaje.setSubirNivel();
+                personaje.setRestablecerVida();
                 vidaDelRival = cantidadPeleas *10;
                 puntos();
                 break;
             }
             
-            if(personaje.getVida()<=0){
+            if(personaje.getVida()<=0){ // si matan al personaje, termino el while
                 break;
             }
         }
